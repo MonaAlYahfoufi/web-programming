@@ -1,0 +1,149 @@
+
+.navbar{
+    background-color: #333;
+} 
+
+nav ul li{
+    list-style-type: none;
+    display: inline;
+}
+
+nav ul li a:hover{
+    color: turquoise;
+}
+
+nav ul li a:active{
+    background-color: rgb(136, 74, 136);
+}
+
+nav ul li a {
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+}
+
+nav{
+    background-color: #333;
+    display:inline-flex;
+    justify-content: center;
+    width: 80%;
+}
+
+nav ul{
+    display: inline-block;
+}
+
+.logo{
+    display: inline;
+    vertical-align:middle;
+    margin-left: 16px;
+}
+
+.banner{
+    background-image: url("images/banner.jpg");
+    background-size: cover;
+    color: white;
+    padding:5px 10px 5px 10px;
+    display: flex;
+    flex-direction:column;
+    font-family: 'Righteous', cursive;
+    font-size: 20px;
+    text-align: center;
+}
+
+.intoduction_container{
+    text-align: center;
+    padding:5px 10px 5px 10px;
+}
+
+span{
+    border-radius: 50%;
+    background-color: black;
+    border: double yellow 2px;
+    color: yellow;
+    padding: 10px;
+}
+
+.grid-container{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    
+    padding:5px 10px 5px 10px;
+    grid-gap: 20px;
+}
+
+.item1{
+    grid-row: 1/span 1;
+    grid-column:1/span 2 ;
+    background-color: black;
+}
+
+.item2{
+    grid-row: 1/span 2;
+    grid-column:3/span 1 ;
+    background-color: black;
+}
+
+.item3{
+    grid-row: 2/span 1;
+    grid-column: 1/span 1;
+    background-color: black;
+}
+
+.item4{
+    grid-row: 2/span 1;
+    grid-column: 2/span 1;
+    background-color: black;
+}
+
+.item5{
+    grid-row: 3/span 1;
+    grid-column: 1/span 2;
+    background-color: black;
+}
+
+.item6{
+    grid-row: 3/span 1;
+    grid-column:3/span 1;
+    background-color: black;
+}
+
+.info{
+    
+    padding:5px 10px 5px 10px;
+    display: flex;
+    flex-direction: column;
+    color: yellow;
+    background-color: #333;
+    align-items: center;
+}
+@media screen and (max-width :900px) {
+    *{
+        font-size: 11px;
+    }
+
+    .logo{
+        display: block;
+        width: 50%;
+        height: 50%;
+        margin-left: 25%;
+    }   
+    .navbar{
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .nav{
+        width: 100%;
+    }
+    .nav ul li{
+        display: block;
+    }
+    .banner{
+        background-image: url("");
+        background-size: cover;
+    }
+    
+}
